@@ -129,20 +129,40 @@
 // console.log("Второе число:", second);
 // console.log("Остальные числа:", rest);
 
-const arr1 = [5, 10, 15];
-const arr2 = [20, 25, 30];
+// const arr1 = [5, 10, 15];
+// const arr2 = [20, 25, 30];
 
-const combined = [...arr1, ...arr2];
+// const combined = [...arr1, ...arr2];
 
-function findMax(...numbers) {
-    return Math.max(...numbers);
-}
+// function findMax(...numbers) {
+//     return Math.max(...numbers);
+// }
 
-const obj1 = { name: "Товар", price: 100 };
-const obj2 = { category: "Электроника", inStock: true };
+// const obj1 = { name: "Товар", price: 100 };
+// const obj2 = { category: "Электроника", inStock: true };
 
-const mergedObject = { ...obj1, ...obj2 };
+// const mergedObject = { ...obj1, ...obj2 };
 
-console.log("Объединённый массив:", combined);
-console.log("Максимальное число:", findMax(1, 5, 3, 9, 2));
-console.log("Объединённый объект:", mergedObject);
+// console.log("Объединённый массив:", combined);
+// console.log("Максимальное число:", findMax(1, 5, 3, 9, 2));
+// console.log("Объединённый объект:", mergedObject);
+
+// import { greet, add, PI } from "./utils.js";
+
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5 + 3 =", add(5, 3));
+// console.log("Значение PI:", PI); 
+
+// import { multiply as умножить } from "./utils.js";
+// console.log("4 * 7 =", умножить(4, 7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение:", Utils.multiply(3, 9));
+
+import { square, cube, E } from "./math.js";
+
+console.log("Квадрат 5:", square(5));
+console.log("Куб 3:", cube(3));
+console.log("Константа E:", E);
